@@ -23,7 +23,7 @@ export default {
 <style scoped>
 .typing {
   font-family: "Encode Sans", sans-serif;
-  font-size: 4em;
+  font-size: 6vw;
   text-align: center;
 }
 </style>

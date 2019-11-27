@@ -11,7 +11,7 @@
       class="black text-center"
     >
       <v-card-text>
-        Contact Me!
+        Copyright © 4019
       </v-card-text>
       <v-divider></v-divider>
       <v-card-text>

@@ -21,8 +21,6 @@
     <v-img
       id="avatar"
       src="@/assets/Abbas.png"
-      max-height="200"
-      max-width="200"
     >
     </v-img>
     <NameTyper
@@ -36,7 +34,7 @@
     <v-btn
       outlined
       dark
-      large
+      x-large
       id="resume"
       :to="{ name: 'resume' }"
     >
@@ -65,17 +63,19 @@ export default {
 #resume {
   position: fixed;
   margin-left: -4.5em;
-  top: 60%;
+  bottom: 23vh;
   left: 50%;
   margin-top: 8em;
 }
 
 #avatar {
-  top: 20%;
-  left: 50%;
+  bottom: 57vh;
+  left: 35vw;
+  height: 18vh;
+  margin-left: 8vw;
   position: fixed;
-  margin-left: -6.7em;
-  margin-right: -16em;
+  height: auto;
+  width: 15vw;
 }
 
 #center {
@@ -83,16 +83,17 @@ export default {
   color: antiquewhite;
   align-content: center;
   top: 50%;
-  left: 50%;
-  height: 18em;
-  margin-top: -9em; /*set to a negative number 1/2 of your height*/
-  margin-left: -16em; /*set to a negative number 1/2 of your width*/
+  left: 50vw;
+  height: 18vh;
+  margin-top: -9vh; /*set to a negative number 1/2 of your height*/
+  margin-left: -24vw; /*set to a negative number 1/2 of your width*/
 }
+
 #desc {
-  font-size: 2em;
+  font-size: 3vw;
   color: lightpink;
   margin-left: -8em;
-  left: 50%;
+  left: 50vw;
   position: fixed;
   top: 60%;
   font-family: "Encode Sans", sans-serif;

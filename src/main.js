@@ -8,7 +8,7 @@ import vuetify from './plugins/vuetify';
 import VueTypedJs from 'vue-typed-js';
 import router from './router';
 
-Vue.config.productionTip = false
+Vue.config.productionTip = true
 
 const requireComponent = require.context(
   './components',
