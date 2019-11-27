@@ -1,9 +1,9 @@
 <template>
   <v-app>
-    <AppNavigation>
+    <AppNavigation v-if="!$route.meta.hideNavigation">
     </AppNavigation>
     <router-view />
-    <AppFooter>
+    <AppFooter v-if="!$route.meta.hideNavigation">
     </AppFooter>
   </v-app>
 </template>

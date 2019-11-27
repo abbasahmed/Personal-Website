@@ -1,5 +1,23 @@
 <template>
   <div>
+    <vue-particles
+      style="margin: auto;"
+      color="#ea00a6"
+      :particleOpacity="0.7"
+      :particlesNumber="80"
+      shapeType="circle"
+      :particleSize="4"
+      linesColor="#dedede"
+      :linesWidth="1"
+      :lineLinked="true"
+      :lineOpacity="0.4"
+      :linesDistance="150"
+      :moveSpeed="3"
+      :hoverEffect="true"
+      hoverMode="grab"
+      :clickEffect="true"
+      clickMode="push"
+    ></vue-particles>
     <v-img
       id="avatar"
       src="@/assets/Abbas.png"
@@ -15,6 +33,16 @@
     <p id="desc">
       {{description}}
     </p>
+    <v-btn
+      outlined
+      dark
+      large
+      id="resume"
+      :to="{ name: 'resume' }"
+    >
+      Resume
+      <v-icon>mdi-file-document-outline</v-icon>
+    </v-btn>
   </div>
 </template>
 
@@ -26,6 +54,7 @@ export default {
     NameTyper
   },
   data: () => ({
+    resume: "resume.pdf",
     name: ["Hi!", "Abbas Ahmed"],
     description: "Student. Engineer. Developer. Traveler."
   })
@@ -33,10 +62,20 @@ export default {
 </script>
 
 <style scoped>
+#resume {
+  position: fixed;
+  margin-left: -4.5em;
+  top: 60%;
+  left: 50%;
+  margin-top: 8em;
+}
+
 #avatar {
-  top: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  top: 20%;
+  left: 50%;
+  position: fixed;
+  margin-left: -6.7em;
+  margin-right: -16em;
 }
 
 #center {
@@ -52,7 +91,7 @@ export default {
 #desc {
   font-size: 2em;
   color: lightpink;
-  margin-left: -8.5em;
+  margin-left: -8em;
   left: 50%;
   position: fixed;
   top: 60%;

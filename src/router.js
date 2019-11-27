@@ -3,8 +3,9 @@ import Router from 'vue-router';
 import Home from './views/Home.vue';
 import Work from './views/Work.vue';
 import Skills from './views/Skills.vue';
-import About from './views/About.vue'
-import Contact from './views/Contact.vue'
+import About from './views/About.vue';
+import Contact from './views/Contact.vue';
+import Resume from './views/Resume.vue';
 
 Vue.use(Router);
 
@@ -36,6 +37,12 @@ export default new Router({
       path: '/contact',
       name: 'contact',
       component: Contact
+    },
+    {
+      path: '/resume',
+      name: 'resume',
+      meta: {hideNavigation: true},
+      component: Resume
     }
   ]
 });

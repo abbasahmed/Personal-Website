@@ -16,10 +16,30 @@
       <v-divider></v-divider>
       <v-card-text>
         <v-row justify="space-around">
-          <v-icon>mdi-github-circle</v-icon>
-          <v-icon>mdi-linkedin</v-icon>
-          <v-icon>mdi-twitter</v-icon>
-          <v-icon>mdi-email</v-icon>
+          <v-btn
+            text
+            href="https://github.com/abbasahmed"
+          >
+            <v-icon>mdi-github-circle</v-icon>
+          </v-btn>
+          <v-btn
+            text
+            href="https://linkedin.com/in/abbaszahmed"
+          >
+            <v-icon>mdi-linkedin</v-icon>
+          </v-btn>
+          <v-btn
+            text
+            href="https://twitter.com/ab_bas27"
+          >
+            <v-icon>mdi-twitter</v-icon>
+          </v-btn>
+          <v-btn
+            text
+            href="mailto:abbaszahmed@gmail.com"
+          >
+            <v-icon>mdi-email</v-icon>
+          </v-btn>
         </v-row>
       </v-card-text>
     </v-card>
