@@ -1,17 +1,24 @@
 <template>
   <v-app-bar
     app
-    color="black"
+    color="transparent"
     dark
     id="toolbar"
   >
-    <v-img
-      class="mx-2"
-      max-height="40"
-      max-width="40"
-      src="@/assets/memoji.jpg"
-    ></v-img>
-    <v-toolbar-title>
+    <router-link
+      :to="{ name: 'home' }"
+      tag="span"
+      style="cursor: pointer"
+    >
+      <v-img
+        class="mx-2"
+        max-height="40"
+        max-width="40"
+        src="@/assets/memoji.jpg"
+      ></v-img>
+    </router-link>
+
+    <v-toolbar-title class="d-none d-sm-flex">
       <router-link
         :to="{ name: 'home' }"
         tag="span"

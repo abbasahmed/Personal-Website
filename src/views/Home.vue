@@ -1,6 +1,8 @@
 <template>
   <div>
+    <!-- <span class="bg"></span> -->
     <vue-particles
+      class="bg"
       style="margin: auto;"
       color="#ea00a6"
       :particleOpacity="0.7"
@@ -60,6 +62,16 @@ export default {
 </script>
 
 <style scoped>
+.bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-size: cover;
+  left: 0;
+  background-image: url("https://i.pinimg.com/originals/56/10/31/56103198919865385260c5bcfa404a3a.png");
+}
+
 #resume {
   position: fixed;
   margin-left: -4.5em;
