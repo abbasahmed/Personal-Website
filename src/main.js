@@ -1,12 +1,16 @@
-import Vue from 'vue'
-import App from './App.vue'
-import VueParticles from 'vue-particles'
-import upperFirst from 'lodash/upperFirst';
-import camelCase from 'lodash/camelCase';
-import 'vuetify/dist/vuetify.min.css';
-import vuetify from './plugins/vuetify';
-import VueTypedJs from 'vue-typed-js';
+import Vue from 'vue';
+import App from './App.vue';
 import router from './router';
+import 'vuetify/dist/vuetify.min.css';
+import VueTypedJs from 'vue-typed-js';
+import vuetify from './plugins/vuetify';
+import VueParticles from 'vue-particles';
+import camelCase from 'lodash/camelCase';
+import upperFirst from 'lodash/upperFirst';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
+
 
 Vue.config.productionTip = true
 
@@ -30,6 +34,8 @@ requireComponent.keys().forEach(fileName => {
   Vue.component(componentName, componentConfig.default || componentConfig);
 });
 
+library.add(faUserSecret)
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(VueParticles)
 Vue.use(VueTypedJs)
 
@@ -37,4 +43,4 @@ new Vue({
   vuetify,
   router,
   render: h => h(App)
-}).$mount('#app')
+}).$mount('#app');

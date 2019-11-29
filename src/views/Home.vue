@@ -94,6 +94,7 @@ export default {
   position: fixed;
   color: antiquewhite;
   align-content: center;
+  text-align: center;
   top: 50%;
   left: 50vw;
   height: 18vh;

@@ -7,7 +7,7 @@
       top
       left
       color="black"
-      :to="{name: 'home'}"
+      :to="{ name: 'home' }"
     >
       <v-icon>mdi-arrow-left-bold</v-icon>
     </v-btn>
@@ -27,6 +27,7 @@ export default {
 
 <style scoped>
 #container {
-  min-height: 100%;
+  height: 100%;
+  width: 100%;
 }
 </style>
