@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- <span class="bg"></span> -->
     <vue-particles
       class="bg"
       style="margin: auto;"
